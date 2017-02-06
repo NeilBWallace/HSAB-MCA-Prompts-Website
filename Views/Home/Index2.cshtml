@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Mental_Capacity_Assessments.Models.Questions
+
+@{
+    ViewBag.Title = "Mental Capacity Pathways";
+}
+
+<div class="row-fluid">
+    <div class="span12">
+
+
+        <img class="img-responsive center-in-span" src="/images/People.png">
+
+
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row ">
+        <div>
+            <div role="toolbar">
+                <div class=" btn-group-sm btn-group-fill-height ">
+                    <div>
+                        <div class="btn-vert-block">
+                            @Html.ActionLink("Assessing Capacity Prompts", "Details", "Home", new { id = 1 }, new { @class = "btn btn-assessing  btn-block  btn-lg margin-button" })
+                            @Html.ActionLink("Best Interests Decision Prompts", "Details", "Home", new { id = 22 }, new { @class = "btn btn-block  btn-best_interests btn-lg margin-button" })
+
+                        </div>
+                        <div class="btn-vert-block">
+                        </div>
+                        <div class="btn-vert-block">
+                            @Html.ActionLink("IMCA Referrals Information Prompts", "Details", "Home", new { id = 38 }, new { @class = "btn btn-block  btn-imca btn-lg margin-button" })
+                        </div>
+                        <div class="btn-vert-block">
+                            @Html.ActionLink("DOLS Applications Prompts", "Details", "Home", new { id = 42 }, new { @class = "btn btn-dols btn-block  btn-lg margin-button" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+

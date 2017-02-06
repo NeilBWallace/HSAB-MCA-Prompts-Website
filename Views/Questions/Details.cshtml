@@ -1,0 +1,58 @@
+﻿@model Mental_Capacity_Assessments.Models.Questions
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Questions</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.yes_button)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.yes_button)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_button)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_button)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.yes_next)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.yes_next)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_next)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_next)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,21 @@
+﻿
+<div class="container" style="margin-top:40px;margin-bottom:40px">
+    <div class="row ">
+        @Html.Raw("<H1>Disclaimer</H1><p>This app is intended for use by Health and Social Care Professionals. It is meant to be used as an aid for decision making and does not replace clinical judgement. <p>Click on each button and information section to see more guidance. <p> This app will not provide enough information to adequately document the decision or decision making process, it is essential that you document all decisions, how they were made nad who else was involved. <p> This app is an adjunct to your organisations policies. <p> The guidance in this app does not relate to a Deprivation of Liberty in the persons own home.")
+        <br />
+        <br />
+        <br />
+    </div>
+</div>
+<div class="container">
+    <div class="row ">
+        <div  role="toolbar">
+            <div class=" btn-group-lg  btn-group-fill-height ">
+                
+                <div  style="margin-top:5px;">
+                    @Html.ActionLink("I agree", "Index2", "Home", new { id = 1 }, new { @class = "btn btn-assessing  btn-lg margin-button" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
